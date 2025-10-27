@@ -9,7 +9,7 @@ This is a Byte-Sized RSE lesson on intermediate Git, part of the [Byte-Sized RSE
 - What are the differences between Git merging strategies: fast-forward merge, 3-way merge, rebase, and squash and merge?
 - How does Git handle merging when branches have diverged?
 
-### Learning objectives
+### Learning Objectives
 
 At the end of this lesson, learners should be able to:
 
