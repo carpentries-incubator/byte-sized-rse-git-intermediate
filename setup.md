@@ -2,53 +2,25 @@
 title: Setup
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
+## Setup
 
-## Data Sets
+::: prereq
 
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
--->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
+- Shell with Git version control tool installed 
+- Ability to navigate filesystem and run commands from within a shell
+- Account on GitHub.com
+- Understanding of Python syntax to be able to read and follow code examples
 
-## Software Setup
+:::
 
-::::::::::::::::::::::::::::::::::::::: discussion
+### Shell with Git
 
-### Details
+On macOS and Linux, some version of a shell (e.g. `bash`) with Git will be available by default and no installation is needed.
 
-Setup for different systems can be presented in dropdown menus via a `spoiler`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
+If you do not have a bash shell installed on your system and require assistance with the installation, you can take a look at [the instructions provided by Software Carpentry](https://swcarpentry.github.io/python-novice-inflammation/#install-python)
+for installing [shell](https://carpentries.github.io/workshop-template/install_instructions/#the-bash-shell) and [Git](https://carpentries.github.io/workshop-template/install_instructions/#git-1).
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::
+### GitHub Account
 
-:::::::::::::::: spoiler
-
-### Windows
-
-Use PuTTY
-
-::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### MacOS
-
-Use Terminal.app
-
-::::::::::::::::::::::::
-
-
-:::::::::::::::: spoiler
-
-### Linux
-
-Use Terminal
-
-::::::::::::::::::::::::
+[GitHub](https://github.com) is a free, online host for Git repositories that you will use during the course to store your code in so you will need to open a free GitHub account unless you do not already have one.
 
