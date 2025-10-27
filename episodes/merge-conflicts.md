@@ -1,5 +1,5 @@
 ---
-title: "Merge Conflicts"
+title: "Resolving Merge Conflicts"
 teaching: 10
 exercises: 0
 ---
