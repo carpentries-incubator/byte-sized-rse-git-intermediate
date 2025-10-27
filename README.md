@@ -1,4 +1,4 @@
-## Byte-Sized RSE Lesson: Intermediate Git
+## Byte-Sized RSE: Intermediate Git
 
 This is a Byte-Sized RSE lesson on intermediate Git, part of the [Byte-Sized RSE Series](https://github.com/carpentries-incubator/byte-sized-rse-overview/tree/main).
 
