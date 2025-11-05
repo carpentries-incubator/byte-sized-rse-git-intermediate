@@ -159,7 +159,7 @@ As your projects grow, you will occasionally need to manage your local code hist
 ### Git Stash: Setting Changes Aside for Later
 
 Imagine you are halfway through some code changes and suddenly need to switch tasks or pull updates from the remote branch. Committing is not ideal yet — so what do you do?
-Use `git stash` command to safely store your uncommitted changes in a local "stash". This lets you clean your working directory and avoid conflicts, without losing any work. When you are ready, you can bring those changes back using `git stash pop`.
+Use `git stash` command to safely store your uncommitted changes in a local "stash". This lets you clean your working directory and avoid conflicts, without losing any work. When you are ready, you can bring those changes back using the `git stash pop` command.
 
 ### Git Cherry-Pick: Pulling in a Specific Commit
 
@@ -167,7 +167,7 @@ Sometimes, you want to take just one specific commit (say, from another branch) 
 
 ### Git Reset: Rewinding Your Commit History
 
-Made a commit too soon? `git reset` allows you to undo commits locally. It moves your branch pointer back to an earlier commit, turning those "undone" changes into uncommitted edits in your working directory. It is handy for rewriting local history before sharing code — but be careful using it on shared branches, as it alters commit history.
+Made a commit too soon? `git reset` command allows you to undo commits locally. It moves your branch pointer back to an earlier commit, turning those "undone" changes into uncommitted edits in your working directory. It is handy for rewriting local history before sharing code — but be careful using it on shared branches, as it alters commit history.
 
 ## Practical Work
 
