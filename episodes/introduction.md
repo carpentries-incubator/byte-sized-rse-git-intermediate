@@ -107,7 +107,7 @@ When such a situation occurs, it stops right before the merge commit so that you
 	
 ### Rebase & Merge
 
-In Git, there is another way to integrate changes from one branch into another: the rebase.
+In Git, there is another way to integrate changes from one branch into another - a **rebase**.
 
 Let's go back to an earlier example from the 3-way merge, where main and feature branches have diverged with subsequent commits made on each (so fast-forward merging strategy is not an option).
 
