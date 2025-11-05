@@ -136,6 +136,11 @@ Rebase is ideal for feature branches that have fallen behind the main developmen
 Rebasing maintains a linear history and avoids merge commits (like fast forwarding), making it look as if changes were made sequentially and as if you created your feature branch from a different point in the repository's history. 
 A disadvantage is that it rewrites commit history, which can be problematic for shared branches as it requires force pushing.
 
+::: callout
+
+Note that you are rebasing onto the feature branch and merging into the main branch.
+:::
+
 Here is a little comparison of the three merge strategies we have covered so far.
 
 | Fast Forward      | Rebasing | 3-Way Merge |
