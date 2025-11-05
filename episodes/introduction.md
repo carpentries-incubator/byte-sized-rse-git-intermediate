@@ -50,15 +50,15 @@ This allows you to collect a related set of commits in one place, without interf
 
 Branching helps separate concerns in your codebase, making development, testing, and code review much easier. It also reduces the chance of conflicts during collaborative work, especially when multiple people are contributing to the same repository.
 
-This approach is known as the **feature branch workflow**. In this model, each new feature or fix lives in its own branch. Once the work is complete and has been tested, the branch is reviewed 
-by project collaborators (other than the code author), any merge conflicts addressed and the new work merged back into the main branch.
+This approach is known as the **feature branch workflow**. In this model of working, each new feature or fix lives in its own branch. 
+Once the work is complete and has been tested, the branch is reviewed by project collaborators (other than the code author), any merge conflicts addressed and the new work merged back into the main branch.
 Using feature branches is an efficient way to manage changes, collaborate effectively, and keep the main branch stable and production-ready.
 
 ## Merging Strategies
 
 ### Merging
 
-When you are ready to bring the changes from your feature branch back into the main branch, Git offers you to do a merge - a process that unifies work done in 2 separate branches. 
+When you are ready to bring the changes from your feature branch back into the main branch, Git offers you to do a **merge** - a process that unifies work done in 2 separate branches. 
 Git will take two (or more - you can merge more branches at the same time) commit pointers and attempt to find a common base commit between them. 
 Git has several different methods of finding the base commit - these methods are called "merge strategies". Once Git finds the common base commit it will create a new "merge commit" that combines the changes of the specified merge commits. Technically, a merge commit is a regular commit which just happens to have two parent commits.
 
