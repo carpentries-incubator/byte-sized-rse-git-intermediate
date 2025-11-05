@@ -148,7 +148,7 @@ Here is a little comparison of the three merge strategies we have covered so far
 
 ### Squash & Merge
 
-Squash and merge command (`git merge --squash`) squashes all the commits from a feature branch into a single simple commit (and not a "3-way merge" commit) before merging into the main branch. 
+Squash and merge command (`git merge --squash`) squashes all the commits from a feature branch into a single regular commit (and not a "3-way merge" commit) before merging into the main branch. 
 This strategy simplifies the commit history, making it easier to follow.
 This strategy is ideal for merging feature branches with numerous small commits, resulting in a cleaner main branch history. 
 
