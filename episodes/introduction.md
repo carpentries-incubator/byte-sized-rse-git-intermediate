@@ -138,7 +138,10 @@ A disadvantage is that it rewrites commit history, which can be problematic for 
 
 ::: callout
 
-Note that you are rebasing onto the feature branch and merging into the main branch.
+### Rebase and merge location
+
+Note that you are rebasing into the feature branch and merging into the main branch.
+
 :::
 
 Here is a little comparison of the three merge strategies we have covered so far.
