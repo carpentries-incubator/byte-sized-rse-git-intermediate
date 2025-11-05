@@ -543,11 +543,12 @@ covered so far.</p>
 </tr></tbody></table></div>
 <div class="section level3">
 <h3 id="squash-merge">Squash &amp; Merge<a class="anchor" aria-label="anchor" href="#squash-merge"></a></h3>
-<p>Squash and merge squashes all the commits from a feature branch into
-a single commit before merging into the main branch. This strategy
-simplifies the commit history, making it easier to follow. This strategy
-is ideal for merging feature branches with numerous small commits,
-resulting in a cleaner main branch history.</p>
+<p>Squash and merge command (<code>git merge --squash</code>) squashes
+all the commits from a feature branch into a single simple commit (and
+not a “3-way merge” commit) before merging into the main branch. This
+strategy simplifies the commit history, making it easier to follow. This
+strategy is ideal for merging feature branches with numerous small
+commits, resulting in a cleaner main branch history.</p>
 </div>
 </section><section><h2 class="section-heading" id="handy-git-features-for-managing-local-changes">Handy Git Features for Managing Local Changes<a class="anchor" aria-label="anchor" href="#handy-git-features-for-managing-local-changes"></a></h2>
 <hr class="half-width"><p>As your projects grow, you will occasionally need to manage your
@@ -558,10 +559,10 @@ commit or want to isolate specific changes.</p>
 <h3 id="git-stash-setting-changes-aside-for-later">Git Stash: Setting Changes Aside for Later<a class="anchor" aria-label="anchor" href="#git-stash-setting-changes-aside-for-later"></a></h3>
 <p>Imagine you are halfway through some code changes and suddenly need
 to switch tasks or pull updates from the remote branch. Committing is
-not ideal yet — so what do you do? Use <code>git stash</code> to safely
-store your uncommitted changes in a local “stash”. This lets you clean
-your working directory and avoid conflicts, without losing any work.
-When you are ready, you can bring those changes back using
+not ideal yet — so what do you do? Use <code>git stash</code> command to
+safely store your uncommitted changes in a local “stash”. This lets you
+clean your working directory and avoid conflicts, without losing any
+work. When you are ready, you can bring those changes back using
 <code>git stash pop</code>.</p>
 </div>
 <div class="section level3">
