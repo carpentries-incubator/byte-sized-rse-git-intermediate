@@ -151,7 +151,7 @@ Treat rebase as a clean up tool for when you are getting ready to open a merge/p
 
 ### Rebase and merge location
 
-Note that you are rebasing into the feature branch and merging into the main branch.
+While technically all branches are equal in Git and you can do merge and rebase either way - you should always be rebasing (into) the feature branch and merging into the main branch.
 
 :::
 
