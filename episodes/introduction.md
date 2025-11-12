@@ -108,6 +108,8 @@ When such a situation occurs, it stops right before the merge commit so that you
 ### Rebase & Merge
 
 In Git, there is another way to integrate changes from one branch into another - a **rebase**.
+Git rebase solves the same problem as Git merge - both of these commands are designed to integrate changes from one branch into another branch — they just do it in very different ways.
+It is important to know when to use (and not to use) which.
 
 Let's go back to an earlier example from the 3-way merge, where main and feature branches have diverged with subsequent commits made on each (so fast-forward merging strategy is not an option).
 
@@ -132,8 +134,10 @@ At this point, you can go back to the main branch and do a fast-forward merge wi
 
 Fast forward merge strategy is best used when you have a short-lived feature branch that needs to be merged back into the main branch, and no other changes have been made to the main branch in the meantime.
 
-Rebase is ideal for feature branches that have fallen behind the main development line and need updating. It is particularly useful before merging long-running feature branches to ensure they apply cleanly on top of the main branch.
-Rebasing maintains a linear history and avoids merge commits (like fast forwarding), making it look as if changes were made sequentially and as if you created your feature branch from a different point in the repository's history. 
+Rebase is ideal for feature branches that have fallen behind the main development line and need updating. 
+It is particularly useful before merging long-running feature branches to ensure they apply cleanly on top of the main branch.
+
+Rebasing maintains a linear history and avoids merge commits (in the same as as fast-forwarding does), making it look as if changes were made sequentially and as if you created your feature branch from a different point in the repository's history. 
 A disadvantage is that it rewrites commit history, which can be problematic for shared branches as it requires force pushing.
 
 ::: callout
