@@ -534,7 +534,11 @@ conflicts manually before continuing.</p>
 <h3 id="rebase-merge">Rebase &amp; Merge<a class="anchor" aria-label="anchor" href="#rebase-merge"></a>
 </h3>
 <p>In Git, there is another way to integrate changes from one branch
-into another - a <strong>rebase</strong>.</p>
+into another - a <strong>rebase</strong>. Git rebase solves the same
+problem as Git merge - both of these commands are designed to integrate
+changes from one branch into another branch — they just do it in very
+different ways. It is important to know when to use (and not to use)
+which.</p>
 <p>Let’s go back to an earlier example from the 3-way merge, where main
 and feature branches have diverged with subsequent commits made on each
 (so fast-forward merging strategy is not an option).</p>
@@ -561,12 +565,13 @@ other changes have been made to the main branch in the meantime.</p>
 <p>Rebase is ideal for feature branches that have fallen behind the main
 development line and need updating. It is particularly useful before
 merging long-running feature branches to ensure they apply cleanly on
-top of the main branch. Rebasing maintains a linear history and avoids
-merge commits (like fast forwarding), making it look as if changes were
-made sequentially and as if you created your feature branch from a
-different point in the repository’s history. A disadvantage is that it
-rewrites commit history, which can be problematic for shared branches as
-it requires force pushing.</p>
+top of the main branch.</p>
+<p>Rebasing maintains a linear history and avoids merge commits (in the
+same as as fast-forwarding does), making it look as if changes were made
+sequentially and as if you created your feature branch from a different
+point in the repository’s history. A disadvantage is that it rewrites
+commit history, which can be problematic for shared branches as it
+requires force pushing.</p>
 <div id="the-golden-rule-of-rebasing" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
