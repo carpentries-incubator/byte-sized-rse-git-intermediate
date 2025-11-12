@@ -137,6 +137,13 @@ Rebasing maintains a linear history and avoids merge commits (like fast forwardi
 A disadvantage is that it rewrites commit history, which can be problematic for shared branches as it requires force pushing.
 
 ::: callout
+### The golden rule of rebasing
+
+Once you understand what rebasing is, the most important thing to learn is when not to do it. The [golden rule of Git rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) is to never use it on public branches.
+
+:::
+
+::: callout
 
 ### Rebase and merge location
 
