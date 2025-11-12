@@ -132,6 +132,10 @@ A - B - C - F [main]
 
 At this point, you can go back to the main branch and do a fast-forward merge with feature branch.
 
+```text
+A - B - C - F - D' - E' [main][feature]
+```
+
 Fast forward merge strategy is best used when you have a short-lived feature branch that needs to be merged back into the main branch, and no other changes have been made to the main branch in the meantime.
 
 Rebase is ideal for feature branches that have fallen behind the main development line and need updating. 
