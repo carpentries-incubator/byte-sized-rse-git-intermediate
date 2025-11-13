@@ -570,7 +570,9 @@ main.</p>
 <p>So, all the changes introduced on feature branch (commits D and E)
 are reapplied on top of commit F - becoming D’ and E’. Note that D’ and
 E’ are rebased commits, which are actually new commits with different
-SHAs but the same modifications as commits D and E.</p>
+SHAs but the same modifications as commits D and E. If some conflicts
+happen during rebase, you will need to resolve them and these new hanges
+will end up as new commits.</p>
 <pre class="text"><code>A - B - C - F [main]
              \
               D' - E' [feature]</code></pre>
@@ -1141,7 +1143,7 @@ nothing to commit, working tree clean</code></pre>
   Creating Feature Branch - Checkin
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Who’s created their new feature branch?</p>
 </div>
@@ -1207,7 +1209,7 @@ of your choice.</p>
   Changing the File - Checkin
   </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>Who has added this to the file, and saved it?</p>
 </div>
@@ -1281,7 +1283,7 @@ commit inherited from the main branch, and also our two new commits.</p>
   Comming on the Branch - Checkin
   </h3>
 </button>
-<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
 <div class="accordion-body">
 <p>Who’s edited the file and made the changes, and committed them -
 who’s done that twice?</p>
@@ -1347,7 +1349,7 @@ create a pull request to merge the changes with the main branch.</p>
   Pushing the Feature Branch to GitHub - Checkin
   </h3>
 </button>
-<div id="collapseInstructor4" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor4" aria-labelledby="headingInstructor4">
+<div id="collapseInstructor4" class="accordion-collapse collapse" aria-labelledby="headingInstructor4" data-bs-parent="#accordionInstructor4">
 <div class="accordion-body">
 <p>Who’s committed that change and pushed the new branch with its
 commits to GitHub? If you have not done it - let’s push the feature
@@ -1502,7 +1504,7 @@ pull request by selecting the button.</p>
   Creating a Pull Request - Checkin
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Who’s created the pull request?</p>
 </div>
@@ -1675,7 +1677,7 @@ was done successfully, and suggests we can delete the branch.</p>
   Merging a Pull Request - Checkin
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Who has merged the pull request?</p>
 </div>
