@@ -52,7 +52,7 @@ Branching helps separate concerns in your codebase, making development, testing,
 
 This approach is known as the **feature branch workflow**. In this model of working, each new feature or fix lives in its own branch. 
 Once the work is complete and has been tested, the branch is reviewed by project collaborators (other than the code author), any merge conflicts addressed and the new work merged back into the main branch.
-Using feature branches is an efficient way to manage changes, collaborate effectively, and keep the main branch stable and production-ready.
+Using feature branches is an efficient way to manage changes, collaborate effectively and keep the main branch stable and production-ready.
 
 ## Merging Strategies
 
