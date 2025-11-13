@@ -38,7 +38,7 @@ The name `main` is just a convention — a Git repository’s default branch can
 
 Why not just always use `main` branch? 
 While it is possible to always commit to `main`, it is not ideal even when you are solo developer working on new features or wanting to experiment with your code as you'd want to keep the main branch clean and stable for your users and collaborators.
-When collaborating with others, this approach quickly causes issues, since everyone ends up interfering with each other’s work and you need to resolve conflicts and fix newly introduced bugs all the time.
+When collaborating with others, this approach quickly causes issues, since everyone ends up interfering with each other’s work and you need to resolve conflicts and fix newly introduced bugs all the time instead of focussing on your line of development.
 
 ### Feature Branch
 
