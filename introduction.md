@@ -54,7 +54,7 @@ You can also work in parallel with collagues (working on other branches) without
 How do you decide when to use a new branch? You should consider starting a new branch whenever you are working on a distinct feature or fixing a specific bug. 
 This allows you to collect a related set of commits in one place, without interfering with other parts of the project.
 In addition, if you always commit to main - you do not give anyone else a chance to check your changes.
-So, even for a relatively small set of changes - it is a good idea to put them on a separate branch and have someone else from the team approve them.
+So, even for a relatively small set of changes that you are absolutely sure are correct and won't break anything - it is a good idea to put them on a separate branch and have someone else from the team approve them.
 This is good software engineering practice.
 
 Branching helps separate concerns in your codebase, making development, testing, and code review much easier. It also reduces the chance of conflicts during collaborative work, especially when multiple people are contributing to the same repository.
