@@ -133,7 +133,7 @@ This results in a cleaner, linear history that looks as if the feature branch wa
 
 So, all the changes introduced on feature branch (commits D and E) are reapplied on top of commit F - becoming D' and E'. 
 Note that D' and E' are rebased commits, which are actually new commits with different SHAs but the same modifications as commits D and E.
-If some conflicts happen during rebase, you will need to resolve them and these new hanges will end up as new commits.
+If some conflicts happen during rebase, you will need to resolve them and these new hanges will end up as new commits on the feature branch.
 
 
 ```text
