@@ -395,15 +395,23 @@ default, this is usually called <code>main</code> (or
 <code>master</code> in older repositories). The name <code>main</code>
 is just a convention — a Git repository’s default branch can technically
 be named anything.</p>
-<p>Why not just always use <code>main</code> branch? While it is
-possible to always commit to <code>main</code>, it is not ideal even
-when you are solo developer working on new features or wanting to
-experiment with your code as you’d want to keep the main branch clean
-and stable for your users and collaborators. When collaborating with
-others, this approach quickly causes issues, since everyone ends up
-interfering with each other’s work and you need to resolve conflicts and
-fix newly introduced bugs all the time instead of focussing on your line
-of development.</p>
+<p>Why not just always use the <code>main</code> branch? Imagine a
+scenario where you started to change the code on your main branch,
+experimenting and potentially breaking something. All of a sudden, you
+are asked to rerun the previous, stable version of the code with new
+parameters to generate new results. Or to fix immediately a really
+critical bug unrelated to your current work. How would you go about
+isolating your new changes neatly without losing them? Or having someone
+look at your new code and testing it without affecting the main, stable
+line of development.</p>
+<p>While it is possible to always commit to <code>main</code>, it is not
+ideal even when you are solo developer working on new features or
+wanting to experiment with your code as you’d want to keep the main
+branch clean and stable for yourself, your users and collaborators. When
+collaborating with others, this approach causes issues even quicker,
+since everyone ends up interfering with each other’s work and you need
+to resolve conflicts and fix newly introduced bugs all the time instead
+of focussing on your line of development.</p>
 </div>
 <div class="section level3">
 <h3 id="feature-branch">Feature Branch<a class="anchor" aria-label="anchor" href="#feature-branch"></a></h3>
