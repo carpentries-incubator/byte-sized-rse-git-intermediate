@@ -128,9 +128,12 @@ A - B - C - F [main]
           D - E [feature]
 ```
 
-When you rebase the feature branch with the main branch, Git replays each commit from the feature branch on top of all the commits from the main branch in order. This results in a cleaner, linear history that looks as if the feature branch was started from the latest commit on main. 
+When you rebase the feature branch with the main branch, Git replays each commit from the feature branch on top of all the commits from the main branch in order. 
+This results in a cleaner, linear history that looks as if the feature branch was started from the latest commit on main. 
 
-So, all the changes introduced on feature branch (commits D and E) are reapplied on top of commit F - becoming D' and E'. Note that D' and E' are rebased commits, which are actually new commits with different SHAs but the same modifications as commits D and E.
+So, all the changes introduced on feature branch (commits D and E) are reapplied on top of commit F - becoming D' and E'. 
+Note that D' and E' are rebased commits, which are actually new commits with different SHAs but the same modifications as commits D and E.
+If some conflicts happen during rebase, you will need to resolve them and these new hanges will end up as new commits.
 
 
 ```text
