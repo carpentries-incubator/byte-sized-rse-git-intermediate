@@ -439,10 +439,13 @@ default, this is usually called <code>main</code> (or
 is just a convention — a Git repository’s default branch can technically
 be named anything.</p>
 <p>Why not just always use <code>main</code> branch? While it is
-possible to always commit to <code>main</code>, it is not ideal when
-you’re collaborating with others, you are working on new features or
-want to experiment with your code, and you want to keep main clean and
-stable for your users and collaborators.</p>
+possible to always commit to <code>main</code>, it is not ideal even
+when you are solo developer working on new features or wanting to
+experiment with your code as you’d want to keep the main branch clean
+and stable for your users and collaborators. When collaborating with
+others, this approach quickly causes issues, since everyone ends up
+interfering with each other’s work and you need to resolve conflicts and
+fix newly introduced bugs all the time.</p>
 </div>
 <div class="section level3">
 <h3 id="feature-branch">Feature Branch<a class="anchor" aria-label="anchor" href="#feature-branch"></a>
@@ -1127,7 +1130,7 @@ nothing to commit, working tree clean</code></pre>
   Creating Feature Branch - Checkin
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Who’s created their new feature branch?</p>
 </div>
@@ -1193,7 +1196,7 @@ of your choice.</p>
   Changing the File - Checkin
   </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>Who has added this to the file, and saved it?</p>
 </div>
@@ -1267,7 +1270,7 @@ commit inherited from the main branch, and also our two new commits.</p>
   Comming on the Branch - Checkin
   </h3>
 </button>
-<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
 <div class="accordion-body">
 <p>Who’s edited the file and made the changes, and committed them -
 who’s done that twice?</p>
@@ -1333,7 +1336,7 @@ create a pull request to merge the changes with the main branch.</p>
   Pushing the Feature Branch to GitHub - Checkin
   </h3>
 </button>
-<div id="collapseInstructor4" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor4" aria-labelledby="headingInstructor4">
+<div id="collapseInstructor4" class="accordion-collapse collapse" aria-labelledby="headingInstructor4" data-bs-parent="#accordionInstructor4">
 <div class="accordion-body">
 <p>Who’s committed that change and pushed the new branch with its
 commits to GitHub? If you have not done it - let’s push the feature
