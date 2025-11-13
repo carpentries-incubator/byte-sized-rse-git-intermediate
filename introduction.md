@@ -89,7 +89,7 @@ After a fast forward merge:
 A - B - C - D - E [main][feature]
 ```
 
-If not told otherwise, Git will by default try to do a fast forward merge if possible.
+If not told otherwise, Git will by default try to do a fast forward merge whenever possible.
 
 ### 3-Way Merge with Merge Commit
 
