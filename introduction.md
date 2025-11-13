@@ -39,7 +39,7 @@ The name `main` is just a convention — a Git repository’s default branch can
 Why not just always use the `main` branch? 
 Imagine a scenario where you started to change the code on your main branch, experimenting and potentially breaking something. 
 All of a sudden, you are asked to rerun the previous, stable version of the code with new parameters to generate new results.
-Or to fix immediately a really critical bug unrelated to your current work. 
+Or to fix immediately a really critical bug unrelated to your current code development work. 
 How would you go about isolating your new changes neatly without losing them?
 Or having someone look at your new code and testing it without affecting the main, stable line of development.
 
