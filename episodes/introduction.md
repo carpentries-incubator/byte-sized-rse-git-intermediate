@@ -42,8 +42,8 @@ When collaborating with others, this approach quickly causes issues, since every
 
 ### Feature Branch
 
-Creating a separate branch (often called a "feature" branch) allows you to add or test code (containing a new "feature") without affecting the main line of development, work in parallel with collagues without worrying that
-your code may break something for the rest of the team and review and merge changes safely after testing using pull/merge requests.
+Creating a separate branch (often called a "feature" branch) allows you (and collaborators) to add or test code (containing a new "feature") without affecting the main line of development. 
+You can also work in parallel with collagues (working on other branches) without worrying that your code may break something for the rest of the team and review and merge changes safely after testing using pull/merge requests.
 
 How do you decide when to use a new branch? You should consider starting a new branch whenever you are working on a distinct feature or fixing a specific bug. 
 This allows you to collect a related set of commits in one place, without interfering with other parts of the project.
