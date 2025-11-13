@@ -22,12 +22,11 @@ exercises: 0
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-Basic Git training usually covers the essential concepts, such as adding files, committing changes, viewing commit history, and checking out or reverting to earlier versions. 
+Basic Git training usually covers the essential concepts, such as adding files, committing changes, pushing to a remote repository to share or backup your code, viewing commit history, and checking out or reverting to earlier versions. 
 But for RSEs working in collaborative, code-intensive projects, that is just the tip of the iceberg. 
-More detailed topics like branching and merging strategies, and understanding merge conflicts are critical for managing code across teams and maintaining clean, reproducible development workflows.
+More detailed topics like branching, understanding merge conflicts and merging strategies are critical for managing code across a team of developers.
 
-In this lesson we will explore branching and feature branch workflow, a popular method for collaborative development using Git, along with some intermediate Git features (merging, rebasing, cherry-picking) 
-and handling merge conflicts that can help streamline your development workflow and avoid common pitfalls in collaborative software development.
+In this lesson we will explore branching and feature branch workflow, a popular method for collaborative development using Git, along with some intermediate Git features (merging, rebasing, cherry-picking) that can help streamline your development workflow and avoid common pitfalls in collaborative software development.
 
 ## Feature Branch Workflow
 
