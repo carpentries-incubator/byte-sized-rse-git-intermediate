@@ -89,6 +89,8 @@ After a fast forward merge:
 A - B - C - D - E [main][feature]
 ```
 
+If not told otherwise, Git will by default try to do a fast forward merge if possible.
+
 ### 3-Way Merge with Merge Commit
 
 A fast-forward merge is not possible if the main and the feature branches have diverged. 
