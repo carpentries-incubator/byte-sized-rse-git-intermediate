@@ -36,8 +36,9 @@ You might be used to committing code directly, but not sure what branches really
 When you start a new Git repository and begin committing, all changes go into a branch — by default, this is usually called `main` (or `master` in older repositories).
 The name `main` is just a convention — a Git repository’s default branch can technically be named anything.
 
-Why not just always use `main` branch? While it is possible to always commit to `main`, it is not ideal when you're collaborating with others, you are working on new features or want 
-to experiment with your code, and you want to keep main clean and stable for your users and collaborators.
+Why not just always use `main` branch? 
+While it is possible to always commit to `main`, it is not ideal even when you are solo developer working on new features or wanting to experiment with your code as you'd want to keep the main branch clean and stable for your users and collaborators.
+When collaborating with others, this approach quickly causes issues, since everyone ends up interfering with each other’s work and you need to resolve conflicts and fix newly introduced bugs all the time.
 
 ### Feature Branch
 
