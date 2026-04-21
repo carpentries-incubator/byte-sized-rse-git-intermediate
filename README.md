@@ -23,4 +23,4 @@ At the end of this lesson, learners should be able to:
 
 ### Recordings
 
-- [Recording of the "Intermediate Git" session delivered at SSI's RSC7, 13 November 2025](https://www.youtube.com/watch?v=i6kK025yQU8)
+- [Recording of the "Byte-Sized RSE: Intermediate Git" session delivered at SSI's RSC7, 13 November 2025](https://www.youtube.com/watch?v=i6kK025yQU8)
