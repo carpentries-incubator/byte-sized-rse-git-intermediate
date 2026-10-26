@@ -388,7 +388,7 @@
         
 <section id="aio-introduction"><p>Content from <a href="introduction.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2025-11-13 |
+<p>Last updated on 2026-10-26 |
 
         <a href="https://github.com/carpentries-incubator/byte-sized-rse-git-intermediate/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -593,8 +593,8 @@ main.</p>
 are reapplied on top of commit F - becoming D’ and E’. Note that D’ and
 E’ are rebased commits, which are actually new commits with different
 SHAs but the same modifications as commits D and E. If some conflicts
-happen during rebase, you will need to resolve them and these new hanges
-will end up as new commits on the feature branch.</p>
+happen during rebase, you will need to resolve them and these new
+changes will end up as new commits on the feature branch.</p>
 <pre class="text"><code>A - B - C - F [main]
              \
               D' - E' [feature]</code></pre>
@@ -609,11 +609,11 @@ development line and need updating. It is particularly useful before
 merging long-running feature branches to ensure they apply cleanly on
 top of the main branch.</p>
 <p>Rebasing maintains a linear history and avoids merge commits (in the
-same as as fast-forwarding does), making it look as if changes were made
-sequentially and as if you created your feature branch from a different
-point in the repository’s history. A disadvantage is that it rewrites
-commit history, which can be problematic for shared branches as it
-requires force pushing.</p>
+same way as fast-forwarding does), making it look as if changes were
+made sequentially and as if you created your feature branch from a
+different point in the repository’s history. A disadvantage is that it
+rewrites commit history, which can be problematic for shared branches as
+it requires force pushing.</p>
 <div id="the-golden-rule-of-rebasing" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -719,9 +719,10 @@ work. When you are ready, you can bring those changes back using the
 </h3>
 <p>Sometimes, you want to take just one specific commit (say, from
 another branch) and apply it to your current branch — without merging
-the whole branch. That is where <code>git cherry-pick</code> command
-comes in. It applies the changes from the chosen commit directly on top
-of your current branch, as if you’d made them there all along.</p>
+the whole branch. That is where <code>git cherry-pick COMMIT-HASH</code>
+command comes in. It applies the changes from the chosen commit
+(identified by COMMIT-HASH) directly on top of your current branch, as
+if you’d made them there all along.</p>
 </div>
 <div class="section level3">
 <h3 id="git-reset-rewinding-your-commit-history">Git Reset: Rewinding Your Commit History<a class="anchor" aria-label="anchor" href="#git-reset-rewinding-your-commit-history"></a>
@@ -732,6 +733,16 @@ commit, turning those “undone” changes into uncommitted edits in your
 working directory. It is handy for rewriting local history before
 sharing code — but be careful using it on shared branches, as it alters
 commit history.</p>
+<p>In addition to rewinding commit history,
+<code>git reset FILENAME</code> (or <code>git reset .</code> for all
+project files containing staged changes) can also help with unstaging
+the staged changes (changes made to the working tree and added to the
+staging area/index with <code>git add</code> but not committed yet).</p>
+<p>If you only have unstaged changes that you want to undo (unstaged
+changes made to the working tree since the last commit) -
+<code>git restore</code> command is helpful.</p>
+<p>A good tutorial on <a href="https://academind.com/articles/git-restore-and-git-reset" class="external-link">“Git
+Restore and Git Reset”</a> is available from Academind.</p>
 </div>
 </section><section><h2 class="section-heading" id="practical-work">Practical Work<a class="anchor" aria-label="anchor" href="#practical-work"></a>
 </h2>
