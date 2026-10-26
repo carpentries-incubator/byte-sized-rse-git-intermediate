@@ -205,11 +205,17 @@ Use `git stash` command to safely store your uncommitted changes in a local "sta
 
 ### Git Cherry-Pick: Pulling in a Specific Commit
 
-Sometimes, you want to take just one specific commit (say, from another branch) and apply it to your current branch — without merging the whole branch. That is where `git cherry-pick` command comes in. It applies the changes from the chosen commit directly on top of your current branch, as if you’d made them there all along.
+Sometimes, you want to take just one specific commit (say, from another branch) and apply it to your current branch — without merging the whole branch. That is where `git cherry-pick COMMIT-HASH` command comes in. It applies the changes from the chosen commit (identified by COMMIT-HASH) directly on top of your current branch, as if you’d made them there all along.
 
 ### Git Reset: Rewinding Your Commit History
 
 Made a commit too soon? `git reset` command allows you to undo commits locally. It moves your branch pointer back to an earlier commit, turning those "undone" changes into uncommitted edits in your working directory. It is handy for rewriting local history before sharing code — but be careful using it on shared branches, as it alters commit history.
+
+In addition to rewinding commit history, `git reset FILENAME` (or `git reset .` for all project files containing staged changes) can also help with unstaging the staged changes (changes made to the working tree and added to the staging area/index with `git add` but not committed yet). 
+
+If you only have unstaged changes that you want to undo (unstaged changes made to the working tree since the last commit) - `git restore` command is helpful.
+
+A good tutorial on ["Git Restore and Git Reset"](https://academind.com/articles/git-restore-and-git-reset) is available from Academind.
 
 ## Practical Work
 
