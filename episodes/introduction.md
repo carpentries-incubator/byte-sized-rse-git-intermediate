@@ -136,7 +136,7 @@ This results in a cleaner, linear history that looks as if the feature branch wa
 
 So, all the changes introduced on feature branch (commits D and E) are reapplied on top of commit F - becoming D' and E'. 
 Note that D' and E' are rebased commits, which are actually new commits with different SHAs but the same modifications as commits D and E.
-If some conflicts happen during rebase, you will need to resolve them and these new hanges will end up as new commits on the feature branch.
+If some conflicts happen during rebase, you will need to resolve them and these new changes will end up as new commits on the feature branch.
 
 
 ```text
@@ -156,7 +156,7 @@ Fast forward merge strategy is best used when you have a short-lived feature bra
 Rebase is ideal for feature branches that have fallen behind the main development line and need updating. 
 It is particularly useful before merging long-running feature branches to ensure they apply cleanly on top of the main branch.
 
-Rebasing maintains a linear history and avoids merge commits (in the same as as fast-forwarding does), making it look as if changes were made sequentially and as if you created your feature branch from a different point in the repository's history. 
+Rebasing maintains a linear history and avoids merge commits (in the same way as fast-forwarding does), making it look as if changes were made sequentially and as if you created your feature branch from a different point in the repository's history. 
 A disadvantage is that it rewrites commit history, which can be problematic for shared branches as it requires force pushing.
 
 ::: callout
@@ -205,11 +205,17 @@ Use `git stash` command to safely store your uncommitted changes in a local "sta
 
 ### Git Cherry-Pick: Pulling in a Specific Commit
 
-Sometimes, you want to take just one specific commit (say, from another branch) and apply it to your current branch — without merging the whole branch. That is where `git cherry-pick` command comes in. It applies the changes from the chosen commit directly on top of your current branch, as if you’d made them there all along.
+Sometimes, you want to take just one specific commit (say, from another branch) and apply it to your current branch — without merging the whole branch. That is where `git cherry-pick COMMIT-HASH` command comes in. It applies the changes from the chosen commit (identified by COMMIT-HASH) directly on top of your current branch, as if you’d made them there all along.
 
 ### Git Reset: Rewinding Your Commit History
 
 Made a commit too soon? `git reset` command allows you to undo commits locally. It moves your branch pointer back to an earlier commit, turning those "undone" changes into uncommitted edits in your working directory. It is handy for rewriting local history before sharing code — but be careful using it on shared branches, as it alters commit history.
+
+In addition to rewinding commit history, `git reset FILENAME` (or `git reset .` for all project files containing staged changes) can also help with unstaging the staged changes (changes made to the working tree and added to the staging area/index with `git add` but not committed yet). 
+
+If you only have unstaged changes that you want to undo (unstaged changes made to the working tree since the last commit) - `git restore` command is helpful.
+
+A good tutorial on ["Git Restore and Git Reset"](https://academind.com/articles/git-restore-and-git-reset) is available from Academind.
 
 ## Practical Work
 
