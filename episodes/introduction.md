@@ -156,7 +156,7 @@ Fast forward merge strategy is best used when you have a short-lived feature bra
 Rebase is ideal for feature branches that have fallen behind the main development line and need updating. 
 It is particularly useful before merging long-running feature branches to ensure they apply cleanly on top of the main branch.
 
-Rebasing maintains a linear history and avoids merge commits (in the same as as fast-forwarding does), making it look as if changes were made sequentially and as if you created your feature branch from a different point in the repository's history. 
+Rebasing maintains a linear history and avoids merge commits (in the same way as fast-forwarding does), making it look as if changes were made sequentially and as if you created your feature branch from a different point in the repository's history. 
 A disadvantage is that it rewrites commit history, which can be problematic for shared branches as it requires force pushing.
 
 ::: callout
