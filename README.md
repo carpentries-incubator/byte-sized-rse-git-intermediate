@@ -20,8 +20,8 @@ At the end of this lesson, learners should be able to:
 ### Slides
 Slides below are available under CC BY 4.0 licence.
 
-- [Slides from RSC7, 13 November 2025](https://docs.google.com/presentation/d/1qNyDV3VDwv6Z3RHwfn5hL0pFxzK_DsWN3bPMjwV7Uoc/edit?usp=sharing)
-- [Slides from RSC8, 28 October 2026](https://docs.google.com/presentation/d/1eBRb1kPerpQkH8rersXuZHnBMvqnZrzVuMHKkcbOUeo/edit?usp=sharing)
+- [Slides from RSC7, November 2025](https://docs.google.com/presentation/d/1qNyDV3VDwv6Z3RHwfn5hL0pFxzK_DsWN3bPMjwV7Uoc/edit?usp=sharing)
+- [Slides from RSC8, October 2026](https://docs.google.com/presentation/d/1eBRb1kPerpQkH8rersXuZHnBMvqnZrzVuMHKkcbOUeo/edit?usp=sharing)
 
 ### Recordings
 
