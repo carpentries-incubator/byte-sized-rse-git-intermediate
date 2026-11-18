@@ -25,4 +25,5 @@ Slides below are available under CC BY 4.0 licence.
 
 ### Recordings
 
-- [Recording of the "Byte-Sized RSE: Intermediate Git" session delivered at SSI's RSC7, 13 November 2025](https://www.youtube.com/watch?v=i6kK025yQU8)
+- [Recording from RSC7, November 2025](https://www.youtube.com/watch?v=i6kK025yQU8)
+- [Recording from RSC8, October 2026](https://youtu.be/Lijfpo5yOaI?si=Rle1-7lVEWaqfVAq)
